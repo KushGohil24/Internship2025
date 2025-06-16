@@ -1,0 +1,50 @@
+/* You can include this in your Quotes.css or global CSS file */
+
+.Container {
+  width: 600px;
+  margin: 100px auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.line {
+  height: 1px;
+  background-color: #ddd;
+  margin-bottom: 15px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  font-size: 1rem;
+  color: #777;
+  font-style: italic;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #1e7ac7;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: rotate(180deg) translateY(5px);
+  color: #ff5722;
+}

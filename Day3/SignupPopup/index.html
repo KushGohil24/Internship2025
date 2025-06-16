@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modal with Email Validation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Pop-Up Modals with Email Validation</h1>
+
+    <button class="open-confirm">Open Confirm Popup</button>
+    <button class="open-signup">Open Sign-Up Popup</button>
+
+    <!-- Confirmation Modal -->
+    <div class="modal-overlay" id="confirmModal">
+      <div class="modal">
+        <button class="close-btn" onclick="closeModal('confirmModal')">
+          &times;
+        </button>
+        <div class="icon-box">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <h2>Completed</h2>
+        <p>You have successfully downloaded all the source code files.</p>
+        <div class="btn-group">
+          <button class="btn btn-cancel" onclick="closeModal('confirmModal')">
+            Ok, Close
+          </button>
+          <button class="btn btn-confirm" onclick="alert('Opening File...')">
+            Open File
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign-Up Modal -->
+    <div class="modal-overlay" id="signupModal">
+      <div class="modal">
+        <button class="close-btn" onclick="closeModal('signupModal')">
+          &times;
+        </button>
+        <h2>Welcome to our website!</h2>
+        <p>Sign up to receive exclusive offers:</p>
+        <input type="email" id="emailInput" placeholder="Your email" />
+        <div class="error-msg" id="errorMsg">
+          Please enter a valid email address.
+        </div>
+        <div class="success-msg" id="successMsg">Successfully signed up!</div>
+        <button class="btn btn-confirm" onclick="validateEmail()">
+          Sign Up
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
